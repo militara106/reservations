@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tables.css">
     <title>Tables</title>
 </head>
+
 <body>
+    <div class="grid">
+        <!-- Header Box -->
+        <div class="header">
+            <h1>Hot Restaurant</h1>
+            <hr style="width: 50%">
+            <h2>Current Reservations and Waiting List</h2>
+            <p>
+                <a href="reserve.html" class="button" id="formLink">Make Reservation</a>
+                <a href="home.html" class="button" id="homeLink">Home</a>
+            </p>
+        </div>
+        <!-- First Box -->
+        <div class="box">
+            <div class="boxHead">
+                Current Reservations
+            </div>
+            <!-- Box Content -->
+            <div class="boxList">
+                <span class="num" id="number">1</span>
+                |
+                <span id="id">Name</span>
+            </div>
+        </div>
+
+        <!-- Second Box -->
+        <div class="box">
+            <div class="boxHead">
+                Waiting List
+            </div>
+            <!-- Box Content -->
+            <div class="boxList">
+                <span class="num" id="number">1</span>
+                |
+                <span id="id">Name</span>
+            </div>
+        </div>
+
+
+    </div>
 
 </body>
+
 </html>

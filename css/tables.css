@@ -1,0 +1,72 @@
+html {
+    color: rgb(51, 51, 51);
+}
+
+.grid {
+    display: grid;
+    width: 50rem;
+    grid-template-rows: auto auto auto;
+    margin: 0 auto;
+}
+
+.header {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+    background: rgb(238, 238, 238);
+    text-align: center;
+    color: black;
+    border: 1px white solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    border: 1px black solid;
+    padding: 2px;
+    cursor: pointer;
+    color: black;
+    background: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: black;
+    color: white;
+}
+
+.box {
+    margin-top: 10px;
+    border: 1px black solid;
+    border-color: rgb(208, 208, 208);
+    border-radius: 3px;
+}
+
+.boxHead {
+    padding: 10px;
+    border-bottom: 1px black solid;
+    border-color: rgb(208, 208, 208);
+    background: rgb(238, 238, 238);
+}
+
+.boxList {
+    font-size: 200%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px black solid;
+    border-color: rgb(208, 208, 208);
+    border-radius: 3px;
+    background: rgb(238, 238, 238);
+}
+
+.num{
+    display: inline-block;
+    color: white;
+    background: rgb(51,122,183);
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    width: 50px;
+}
