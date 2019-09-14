@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="css/tables.css">
     <title>Tables</title>
 </head>
@@ -20,35 +23,41 @@
                 <a href="home.html" class="button" id="homeLink">Home</a>
             </p>
         </div>
-        <!-- First Box -->
+        <!-- Current Reservations -->
         <div class="box">
             <div class="boxHead">
                 Current Reservations
             </div>
             <!-- Box Content -->
-            <div class="boxList">
-                <span class="num" id="number">1</span>
-                |
-                <span id="id">Name</span>
+            <div id="current">
+                <div class="boxList">
+                    <span class="num">1</span>
+                    |
+                    <span id="id">Name</span>
+                </div>
             </div>
         </div>
 
-        <!-- Second Box -->
+        <!-- Waitlist -->
         <div class="box">
             <div class="boxHead">
                 Waiting List
             </div>
             <!-- Box Content -->
-            <div class="boxList">
-                <span class="num" id="number">1</span>
-                |
-                <span id="id">Name</span>
+            <div id="waitlist">
+                <div class="boxList">
+                    <span class="num">1</span>
+                    |
+                    <span id="id">Name</span>
+                </div>
             </div>
         </div>
 
 
     </div>
 
+    <script type="text/javascript" href="tablesTest.js">
+    </script>
 </body>
 
 </html>
