@@ -24,7 +24,7 @@ app.get("/tables", function(req, res) {
 
 
 // Displays all characters
-app.get("/api/characters", function(req, res) {
+app.get("/api/reservations", function(req, res) {
   return res.json(characters);
 });
 
@@ -52,7 +52,7 @@ var characters = [
   }
 ];
 
-app.get("/api/characters/:character", function(req, res) {
+app.get("/api/reservations/:reservations", function(req, res) {
   var chosen = req.params.character;
 
   console.log(chosen);
@@ -66,7 +66,7 @@ for (var i = 0; i < characters.length; i++) {
 return res.json(false);
 });
 
-app.post("/api/characters", function(req, res) {
+app.post("/api/reservations", function(req, res) {
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body parsing middleware
   var newCharacter = req.body;
