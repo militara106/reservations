@@ -56,7 +56,48 @@
 
     </div>
 
-    <script type="text/javascript" href="tablesTest.js">
+    <script type="text/javascript">
+        var testArr = [];
+
+        $.get("/api/reservations", function (data) {
+            for (var i = 0; i < data.length; i++) {
+                arr.push(data[i]);
+            }
+            updateListing();
+
+            function updateListing() {
+                $("#waitlist").empty();
+                $("#current").empty();
+                for (var i = 0; i < testArr.length; i++) {
+                    if (i < 5) {
+                        createListing(testArr[i].unique, (i + 1), true);
+                    } else {
+                        createListing(testArr[i].unique, (i + 1), false);
+                    }
+                }
+            }
+
+            function createListing(name, number, check) {
+
+                var newListing = $("<div>")
+                    .addClass("boxList");
+
+                var newNumber = $("<span>")
+                    .addClass("num")
+                    .text(number);
+
+                var newName = $("<span>")
+                    .addClass("id").text(" | " + name);
+
+                newListing.append(newNumber).append(newName);
+
+                if (check == true) {
+                    $("#current").append(newListing);
+                } else {
+                    $("#waitlist").append(newListing);
+                }
+            }
+        });
     </script>
 </body>
 
